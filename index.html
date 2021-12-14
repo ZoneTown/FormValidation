@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Registry Form</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div id="forms">
+        <!--Creates little border around form-->
+         <fieldset>
+            <!--Creates the name in the border-->
+            <legend id="lege">Personal Details:</legend>
+            <!--All the inputs and their labels-->
+            <form name="registration" onSubmit="return validation();">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+                <label for="gend">Gender:</label><br>
+                <select name="gend" id="gend" required>
+                    <option selected="" value="Default">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefernot">Prefer not to answer</option>
+                </select><br><br>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" min="1900" max="2021" required><br><br>
+                <label for="mail">Email:</label><br>
+                <input type="email" id="mail" name="mail" placeholder="JohnDoe@gmail.com"><br><br>
+                <label for="phonenum">Phone Number:</label><br>
+                <input type="tel" id="phonenum" name="phonenum" placeholder="623-999-5555"><br><br>
+                <div id="subres">
+                    <input type="submit"><br>
+                    <input type="reset" id="res">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

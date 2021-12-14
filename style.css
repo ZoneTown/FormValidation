@@ -1,0 +1,50 @@
+/*Color of background*/
+html{
+    background-color: #d8cfd4;
+}
+
+/*Stylizes the forms*/
+#forms{
+    width:40%;
+    height:auto;
+    margin-left:30%;
+    margin-right:30%;
+    margin-top:10%;
+    padding:10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Styles the submit and reset button*/
+#subres{
+    display:flex;
+}
+
+/*Further styles the reset button*/
+#res{
+    margin-left:10px;
+}
+
+/*Styles the legend*/
+#lege{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*Makes the cursor become a pointer over the submit button*/
+input[type=submit]{
+    cursor:pointer;
+}
+
+/*Makes the cursor become a pointer over the reset button*/
+input[type=reset]{
+    cursor:pointer;
+}
+
+/*Makes the submit button change color so long as the cursor is hovering over it*/
+input[type=submit]:hover{
+    background-color:#ccc;
+}
+
+/*Makes the reset button change color so long as the cursor is hovering over it*/
+input[type=reset]:hover{
+    background-color:#ccc;
+}
